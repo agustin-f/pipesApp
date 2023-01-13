@@ -2,7 +2,35 @@
     <h1>{{nombre | titlecase}}</h1> 
 </div>
 
-<button pButton  (click)="mostrarNombre()" label="Mostrar nombre"></button>
+<button 
+   pButton icon="pi pi-bell" 
+   iconPos="right" 
+   class="p-button-help" 
+   (click)="mostrarNombre()" 
+   label="Mostrar nombre">
+</button>
+
+
+<p-card [header]="nombre | titlecase"
+        subheader="Este es el subheader">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda aliquid quo, at quibusdam vitae corrupti provident nulla, aliquam deserunt maxime architecto laudantium placeat aut, excepturi voluptatibus eos odit tempore nihil.</p>
+</p-card>
+
+<!-- <p-card header="Simple Card" class="p-element">
+    <div class="p-card p-component" 
+    style="width: 25rem; margin-bottom: 2em;">
+    <div class="p-card-body">
+        <div class="p-card-title ng-star-inserted"> 
+        </div>
+        <div class="p-card-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Inventore sed consequuntur error repudiandae numquam deserunt 
+                quisquam repellat libero asperiores earum nam nobis, culpa 
+                ratione quam perferendis esse, cupiditate neque quas!</p>
+            </div>
+        </div>
+    </div>
+</p-card> -->
 
 
 
