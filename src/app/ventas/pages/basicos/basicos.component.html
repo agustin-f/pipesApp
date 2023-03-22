@@ -1,7 +1,7 @@
 <div class="text-layout">
     <h1>Pipes básicos</h1>
     <p>
-        Pipes inlcuidos en Angular - Usualmente en el Common Module
+        Pipes inlcuidos en Angular - Usualmente en el Common Module.
     </p>
 </div>
 
@@ -22,6 +22,57 @@
         <p-card header="titlecase"
         [subheader]="nombreCompleto | titlecase">
             {{nombreCompleto | titlecase}}
+        </p-card>
+    </div>
+</div>
+
+<div class="text-layout">
+    <h1>Pipe de Fecha</h1>
+    <p>
+        Pipes inlcuidos en Angular para mostrar las fechas en sus diferentes formatos.
+    </p>
+</div>
+
+<div class="p-grid">
+    <div class="p-col-6">
+        <p-card>
+            <ul>
+                <li>fecha</li>
+                <li>fecha | date</li>
+                <li>fecha | date:'short'</li>
+                <li>fecha | date:'long'</li>
+                <li>fecha | date:'full'</li>
+                <li>fecha | date:'shortDate'</li>
+                <li>fecha | date:'mediumDate'</li>
+                <li>fecha | date:'longDate'</li>
+                <li>fecha | date:'fullDate'</li>
+                <li>fecha | date:'shortTime'</li>
+                <li>fecha | date:'mediumTime'</li>
+                <li>fecha | date:'longTime'</li>
+                <li>fecha | date:'fullTime'</li>
+                <li>fecha | date:'MMMM dd, yyyy'</li>
+            </ul>
+        </p-card>
+    </div>
+
+    <div class="p-col-6">
+        <p-card>
+            <ul>
+                <li> {{fecha}}</li>
+                <li> {{fecha | date}}</li>
+                <li> {{fecha | date:'short'}}</li>
+                <li> {{fecha | date:'long'}}</li>
+                <li> {{fecha | date:'full'}}</li>
+                <li> {{fecha | date:'shortDate'}}</li>
+                <li> {{fecha | date:'mediumDate'}}</li>
+                <li> {{fecha | date:'longDate'}}</li>
+                <li> {{fecha | date:'fullDate'}}</li>
+                <li> {{fecha | date:'shortTime'}}</li>
+                <li> {{fecha | date:'mediumTime'}}</li>
+                <li> {{fecha | date:'longTime'}}</li>
+                <li> {{fecha | date:'fullTime'}}</li>
+                <li> {{fecha | date:'MMMM dd, yyyy'}}</li>
+            </ul>
         </p-card>
     </div>
 </div>
