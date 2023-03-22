@@ -16,7 +16,7 @@ const routes: Routes = [
     component: NumerosComponent
   },
   {
-    path: 'mo-comunes',
+    path: 'no-comunes',
     component: NoComunesComponent
   },
   {
