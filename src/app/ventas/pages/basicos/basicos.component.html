@@ -52,6 +52,13 @@
                 <li>fecha | date:'fullTime'</li>
                 <li>fecha | date:'MMMM dd, yyyy'</li>
             </ul>
+
+            <hr>
+            <ul>
+                <li> fecha | date:'long':'GMT-6' </li>
+                <li> fecha | date:'long':'GMT-4' </li>
+                <li> fecha | date:'long':'GMT-4':'EN'</li>
+            </ul>
         </p-card>
     </div>
 
@@ -72,6 +79,12 @@
                 <li> {{fecha | date:'longTime'}}</li>
                 <li> {{fecha | date:'fullTime'}}</li>
                 <li> {{fecha | date:'MMMM dd, yyyy'}}</li>
+            </ul>
+            <hr>
+            <ul>
+                <li> {{fecha | date:'long':'GMT-6'}}</li>
+                <li> {{fecha | date:'long':'GMT-4'}}</li>
+                <li> {{fecha | date:'long':'GMT-4':'EN'}}</li>
             </ul>
         </p-card>
     </div>
