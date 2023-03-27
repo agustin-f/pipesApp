@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/button'; // importarlo
 import {CardModule} from 'primeng/card';
 import {MenubarModule} from 'primeng/menubar';
+import { FieldsetModule } from 'primeng/fieldset';
 
 
 
@@ -12,7 +13,8 @@ import {MenubarModule} from 'primeng/menubar';
   exports: [
     ButtonModule,
     CardModule,
-    MenubarModule
+    MenubarModule,
+    FieldsetModule
   ],
   imports: [
     CommonModule
