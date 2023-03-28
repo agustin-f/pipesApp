@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { interval } from 'rxjs';
+import { tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-no-comunes',
@@ -63,5 +65,14 @@ export class NoComunesComponent implements OnInit {
     }
 
   ]
+
+  //Async Pipe
+  miObservable = interval(1000).pipe(tap(()=> console.log('intervalo')));
+
+  valorePromesa = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+        resolve('Esta es la data de nuestra promesa')
+    },3500)
+  })
 
 }
