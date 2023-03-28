@@ -47,4 +47,21 @@ export class NoComunesComponent implements OnInit {
     direccion: 'Buenos Aires, Argentina'
   }
 
+  //Json pipe
+  heroes = [
+    {
+      nombre: ' Superman',
+      vuela: true
+    },
+    {
+      nombre: 'Capitan América',
+      vuela: true
+    },
+    {
+      nombre: 'Aquaman',
+      vuela: false
+    }
+
+  ]
+
 }
