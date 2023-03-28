@@ -31,4 +31,13 @@ export class NoComunesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  cambiarPersona(){
+    this.nombre = 'María';
+    this.genero = 'femenino';
+  }
+
+  eliminarCliente(){
+    this.clientes.shift();
+  }
+
 }
