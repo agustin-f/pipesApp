@@ -40,4 +40,11 @@ export class NoComunesComponent implements OnInit {
     this.clientes.shift();
   }
 
+  //Key Value Pipe
+  persona = {
+    nombre: 'Josefina',
+    edad: '42',
+    direccion: 'Buenos Aires, Argentina'
+  }
+
 }
