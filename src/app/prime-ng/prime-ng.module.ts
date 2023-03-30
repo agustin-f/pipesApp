@@ -5,6 +5,7 @@ import { ButtonModule } from 'primeng/button'; // importarlo
 import {CardModule} from 'primeng/card';
 import {MenubarModule} from 'primeng/menubar';
 import { FieldsetModule } from 'primeng/fieldset';
+import { TableModule } from 'primeng/table';
 
 
 
@@ -14,7 +15,8 @@ import { FieldsetModule } from 'primeng/fieldset';
     ButtonModule,
     CardModule,
     MenubarModule,
-    FieldsetModule
+    FieldsetModule,
+    TableModule
   ],
   imports: [
     CommonModule
